@@ -1,0 +1,38 @@
+// 背景图片
+.bg-image(@url){
+  background-image: url('../../../static/@{url}@2x.png');
+  @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3);
+  background-image: url("../../../static/@{url}@3x.png");
+}
+// 不换行
+.no-wrap(){
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.flex{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-center{
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+
+// 扩展点击区域
+.extend-click(){
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+  }
+}

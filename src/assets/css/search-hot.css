@@ -1,0 +1,33 @@
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flex-center {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.search-hot {
+  width: 100%;
+  margin-bottom: 25px;
+}
+.search-hot .tit-line {
+  width: 100%;
+  height: 14px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.search-hot .hot-words-box {
+  width: 100%;
+}
+.search-hot .hot-words-box li {
+  display: inline-block;
+  padding: 5px 10px;
+  margin: 0 20px 10px 0;
+  border-radius: 6px;
+  background: #333;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.3);
+}
